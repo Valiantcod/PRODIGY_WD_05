@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?weather') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#location-input {
+    padding: 10px;
+    width: calc(100% - 110px);
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#search-button {
+    padding: 10px;
+    width: 90px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+#weather-data h2 {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+#weather-data p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+#loading,
+#error {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#error {
+    color: #ff4c4c;
+}
